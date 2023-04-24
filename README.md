@@ -2,6 +2,10 @@
 Here you can find instructions for installing the Virtual Joystick
 https://github.com/shoaib-wattoo/Simple-virtual-joystick-in-unity
 
+Canvas -> JContainer -> JKnob
+
+![vj_screen](https://user-images.githubusercontent.com/29317460/234102400-33a02b6a-58c5-4beb-a42c-6d88f02aacba.PNG)
+
 # Car Controller 
 To install a controller, connect the controller file to the desired object and make, for example, the following settings
 
