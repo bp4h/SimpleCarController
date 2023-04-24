@@ -5,9 +5,7 @@ using UnityEngine;
 public class CoolCarController : MonoBehaviour
 {
     [SerializeField] float acceleration = 8f;
-    //[SerializeField] float rotationAngle = 10f;
     [SerializeField] float turnSpeed = 10f;
-    //public float steeringSpeed = 5f;
 
     Vector3 direction;
     float angle;
@@ -19,8 +17,6 @@ public class CoolCarController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         controlsObject = GameObject.Find("JContainer").GetComponent<JHandler>();
-
-
     }
 
     private void Update()
@@ -44,10 +40,6 @@ public class CoolCarController : MonoBehaviour
 
     void Movement()
     {
-        //transform.rotation = Quaternion.AngleAxis(angle - rotationAngle, new Vector3(0f, 1f, 0f));
-        //rb.position = transform.position;
-
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
-
     }
 }
